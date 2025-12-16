@@ -42,10 +42,10 @@ go-beginner-toolkit/
 git clone <your-repo-url>
 cd go-beginner-toolkit/go-hello-world
 
-2. Initialize Go Module (if not already initialized)
+### 2. Initialize Go Module (if not already initialized)
 go mod init hello
 
-3. Run the Program
+###3. Run the Program
 go run main.go
 
 Expected Output
