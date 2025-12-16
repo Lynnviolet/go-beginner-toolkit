@@ -1,4 +1,4 @@
-# go-beginner-toolkit
+
 # Go Beginner Toolkit – Hello World Example
 
 ## Project Overview
