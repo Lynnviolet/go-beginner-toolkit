@@ -45,24 +45,21 @@ Run the installer and follow the default installation steps.
 
 ### Step 2: Verify Installation
 Open a terminal and run:
-
-```bash
+(```bash
 go version
 Expected Output(example)
-go version go1.21.0 windows/amd64
+go version go1.21.0 windows/amd64)
 
+### Step 3: Create the main Project Folder
 
-
-Step 3: Create Project Folder
-
-# Create the main project folder
 mkdir go-beginner-toolkit
 cd go-beginner-toolkit
-# Create a subfolder for your Hello World example
+
+### Step 4: Create a subfolder for your Hello World example
 mkdir go-hello-world
 cd go-hello-world
 
-5. Minimal Working Example
+### Step 5. Minimal Working Example
 Description
 
 This example prints "Hello, World!" to the terminal using Go.
@@ -70,6 +67,16 @@ This example prints "Hello, World!" to the terminal using Go.
 Code Example
 
 Create a file named main.go and add the following code:
+
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+
+
 package main           // Defines the package name; 'main' is special as the entry point
 
 import "fmt"           // Imports the 'fmt' package for printing to the terminal
@@ -86,7 +93,8 @@ go run main.go
 Expected Output
 Hello, World!
 
-6. AI Prompt Journal
+
+### Step 6. AI Prompt Journal
 Prompt 1
 
 Prompt Used:
@@ -97,6 +105,10 @@ To understand what Go is and whether it is suitable for a beginner project.
 
 Reflection:
 The AI provided a simple explanation of Go and its real-world uses, which helped me confidently choose it for this capstone.
+
+Curriculum Link: https://ai.moringaschool.com/
+Evaluation of Helpfulness: This prompt was very helpful because it simplified the Go setup process, clarified folder navigation, and helped avoid common beginner mistakes.
+
 
 Prompt 2
 
@@ -109,9 +121,12 @@ To learn how to create a Go project and run it correctly using the terminal.
 Reflection:
 The AI helped me understand how to navigate folders, initialize a Go module, and run a Go file using go run.
 
-7. Common Issues & Fixes
-Issue 1: go command not recognized
+Curriculum Link: https://ai.moringaschool.com/
+Evaluation of Helpfulness: This prompt was very helpful because it simplified the Go setup process, clarified folder navigation, and helped avoid common beginner mistakes.
 
+
+### Step 7. Common Issues & Fixes
+Issue 1: go command not recognized
 Cause: Go is not added to the system PATH or the terminal was not restarted.
 Fix: Restart VS Code or add Go to the system environment variables.
 
@@ -119,10 +134,18 @@ Issue 2: Program does not run
 
 Cause: Attempting to run the .go file directly instead of using the Go command.
 Fix: Always run the program using:
-
 go run main.go
 
-8. References
+##
+Step 8: Testing & Peer Feedback
+
+I shared this Go Beginner Toolkit with a peer to test the setup and execution process.
+They followed the steps and successfully ran the Hello World program.
+Their feedback was that the PATH setup needed clearer explanation, which I have now clarified in the Common Issues section.
+
+
+###
+Step 9:. References
 
 Official Go Documentation: https://go.dev/doc/
 
